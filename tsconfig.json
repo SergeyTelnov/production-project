@@ -7,7 +7,12 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-    // "baseUrl": ".",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
+    "strictNullChecks": false,
+    "strict": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
