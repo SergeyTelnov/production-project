@@ -2,7 +2,12 @@
   "extends": "stylelint-config-standard-scss",
   "rules": {
     "indentation": [2],
-    "rule-empty-line-before": ["always"],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["inside-block"]
+      }
+    ],
     "selector-class-pattern": null,
     "custom-property-empty-line-before": null
   }

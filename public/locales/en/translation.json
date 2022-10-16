@@ -1,8 +1,11 @@
 {
+  "About Us": "About Us",
+  "An unexpected error has occurred": "An unexpected error has occurred",
   "Home": "Home",
   "Language": "RU",
+  "Page not found": "Page not found",
   "Test example": "Test example",
   "Translate": "Translate",
-  "toggle": "toggle",
-  "About Us": "About Us"
+  "Refresh the page": "Refresh the page",
+  "toggle": "toggle"
 }

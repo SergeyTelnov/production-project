@@ -1,8 +1,11 @@
 {
+  "About Us": "О нас",
+  "An unexpected error has occurred": "Произошла непредвиденная ошибка",
   "Home": "Главная",
   "Language": "EN",
+  "Page not found": "Страница не найдена",
   "Test example": "Теcтовый пример",
   "Translate": "Перевод",
-  "toggle": "Переключатель",
-  "About Us": "О нас"
+  "Refresh the page": "Обновить страницу",
+  "toggle": "Переключатель"
 }
