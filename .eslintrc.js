@@ -30,6 +30,7 @@ module.exports = {
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "no-unused-vars": "warn",
+    "n/handle-callback-err": "warn",
     "react/require-default-props": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "warn",
@@ -38,6 +39,15 @@ module.exports = {
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
+    "max-len": ["error", { ignoreComments: true, code: 100 }],
+    "@typescript-eslint/indent": [
+      2,
+      2,
+      {
+        SwitchCase: 1,
+        ignoreComments: true
+      }
+    ],
     "@typescript-eslint/semi": [2, "always"],
     "@typescript-eslint/space-before-function-paren": [
       "error",
