@@ -3,7 +3,7 @@ import {
   Theme,
   ThemeContext,
   LOCAL_STORAGE_THEME_KEY
-} from "app/provider/ThemeProvider/lib/ThemeContext";
+} from "app/providers/ThemeProvider/lib/ThemeContext";
 
 interface UseThemeResult {
   toggleTheme: () => void;
