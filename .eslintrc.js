@@ -35,11 +35,17 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "warn",
     "react/function-component-definition": "off",
+    "react/display-name": "warn",
     "no-shadow": "off",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
     "max-len": ["error", { ignoreComments: true, code: 120 }],
+    "i18next/no-literal-string": [
+      "error",
+      { markupOnly: true, ignoreAttribute: ["data-testid", "to"] }
+    ],
+    //@typescript
     "@typescript-eslint/indent": [
       2,
       2,
@@ -79,10 +85,7 @@ module.exports = {
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/naming-convention": "off",
-    "i18next/no-literal-string": [
-      "error",
-      { markupOnly: true, ignoreAttribute: ["data-testid", "to"] }
-    ]
+    "@typescript-eslint/consistent-type-assertions": "warn"
   },
   globals: {
     __IS_DEV__: true
