@@ -27,6 +27,15 @@ module.exports = {
       2,
       { extensions: [".js", ".jsx", ".tsx"] }
     ],
+    semi: [2, "always"],
+    quotes: [
+      "error",
+      "double",
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: true
+      }
+    ],
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "no-unused-vars": "warn",
@@ -37,6 +46,10 @@ module.exports = {
     "react/function-component-definition": "off",
     "react/display-name": "warn",
     "no-shadow": "off",
+    "space-before-function-paren": [
+      "error",
+      { anonymous: "always", named: "never" }
+    ],
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
@@ -81,6 +94,7 @@ module.exports = {
         }
       }
     ],
+    "@typescript-eslint/no-var-requires": "warn",
     "@typescript-eslint/comma-dangle": [2, "never"],
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
