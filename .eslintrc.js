@@ -18,7 +18,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module"
   },
-  plugins: ["react", "@typescript-eslint", "i18next"],
+  plugins: ["react", "@typescript-eslint", "i18next", "react-hooks"],
   rules: {
     "react/jsx-indent": [2, 2],
     "react/jsx-indent-props": [2, 2],
@@ -58,6 +58,8 @@ module.exports = {
       "error",
       { markupOnly: true, ignoreAttribute: ["data-testid", "to"] }
     ],
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
     //@typescript
     "@typescript-eslint/indent": [
       2,
@@ -106,9 +108,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["**/src/**/*.test.{ts,tsx}"],
+      files: ["**/src/**/*.{test,stories}.{ts,tsx}"],
       rules: {
-        "i18next/no-literal-string": "off"
+        "i18next/no-literal-string": "off",
+        "max-len": "off"
       }
     }
   ]
