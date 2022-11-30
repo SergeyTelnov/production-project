@@ -4,8 +4,9 @@
   "Home": "Главная",
   "Language": "EN",
   "Page not found": "Страница не найдена",
+  "Refresh the page": "Обновить страницу",
   "Test example": "Теcтовый пример",
   "Translate": "Перевод",
-  "Refresh the page": "Обновить страницу",
-  "toggle": "Переключатель"
+  "toggle": "Переключатель",
+  "Sign in": "Войти"
 }
