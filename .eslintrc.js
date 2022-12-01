@@ -58,6 +58,7 @@ module.exports = {
       "error",
       { markupOnly: true, ignoreAttribute: ["data-testid", "to"] }
     ],
+    "no-param-reassign": "off",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
     //@typescript
