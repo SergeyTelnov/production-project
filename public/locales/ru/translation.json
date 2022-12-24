@@ -5,8 +5,10 @@
   "Language": "EN",
   "Page not found": "Страница не найдена",
   "Refresh the page": "Обновить страницу",
+  "Sign in": "Войти",
   "Test example": "Теcтовый пример",
   "Translate": "Перевод",
-  "toggle": "Переключатель",
-  "Sign in": "Войти"
+  "Login": "Логин",
+  "Password": "Пароль",
+  "toggle": "Переключатель"
 }
