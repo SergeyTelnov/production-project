@@ -5,8 +5,10 @@
   "Language": "RU",
   "Page not found": "Page not found",
   "Refresh the page": "Refresh the page",
+  "Sign in": "Sign in",
   "Test example": "Test example",
   "Translate": "Translate",
-  "toggle": "toggle",
-  "Sign in": "Sign in"
+  "Login": "Login",
+  "Password": "Password",
+  "toggle": "toggle"
 }

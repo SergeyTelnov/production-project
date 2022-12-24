@@ -67,7 +67,8 @@ module.exports = {
       2,
       {
         SwitchCase: 1,
-        ignoreComments: true
+        ignoreComments: true,
+        ignoredNodes: ["TSUnionType", "TSTypeParameterInstantiation"]
       }
     ],
     "@typescript-eslint/semi": [2, "always"],
