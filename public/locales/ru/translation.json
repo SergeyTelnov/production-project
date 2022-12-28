@@ -1,14 +1,17 @@
 {
   "About Us": "О нас",
   "An unexpected error has occurred": "Произошла непредвиденная ошибка",
+  "E-mail": "E-mail",
   "Home": "Главная",
+  "Invalid email or password": "Некорректно введен email или пароль",
   "Language": "EN",
+  "Login": "Вход",
   "Page not found": "Страница не найдена",
+  "Password": "Пароль",
   "Refresh the page": "Обновить страницу",
   "Sign in": "Войти",
+  "Log out": "Выйти",
   "Test example": "Теcтовый пример",
   "Translate": "Перевод",
-  "Login": "Логин",
-  "Password": "Пароль",
   "toggle": "Переключатель"
 }
