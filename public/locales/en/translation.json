@@ -1,14 +1,17 @@
 {
   "About Us": "About Us",
   "An unexpected error has occurred": "An unexpected error has occurred",
+  "E-mail": "E-mail",
   "Home": "Home",
+  "Invalid email or password": "Invalid email or password",
   "Language": "RU",
+  "Login": "Login",
   "Page not found": "Page not found",
+  "Password": "Password",
   "Refresh the page": "Refresh the page",
   "Sign in": "Sign in",
+  "Log out": "Log out",
   "Test example": "Test example",
   "Translate": "Translate",
-  "Login": "Login",
-  "Password": "Password",
   "toggle": "toggle"
 }
