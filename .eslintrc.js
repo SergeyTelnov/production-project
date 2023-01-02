@@ -22,7 +22,6 @@ module.exports = {
   rules: {
     "react/jsx-indent": [2, 2],
     "react/jsx-indent-props": [2, 2],
-    indent: [2, 2],
     "react/jsx-filename-extension": [
       2,
       { extensions: [".js", ".jsx", ".tsx"] }
@@ -56,21 +55,13 @@ module.exports = {
     "max-len": ["error", { ignoreComments: true, code: 120 }],
     "i18next/no-literal-string": [
       "error",
-      { markupOnly: true, ignoreAttribute: ["data-testid", "to"] }
+      { markupOnly: true, ignoreAttribute: ["data-testid", "to", "nameKey"] }
     ],
     "no-param-reassign": "off",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
     //@typescript
-    "@typescript-eslint/indent": [
-      2,
-      2,
-      {
-        SwitchCase: 1,
-        ignoreComments: true,
-        ignoredNodes: ["TSUnionType", "TSTypeParameterInstantiation"]
-      }
-    ],
+    "@typescript-eslint/indent": ["warn"],
     "@typescript-eslint/semi": [2, "always"],
     "@typescript-eslint/space-before-function-paren": [
       "error",
@@ -103,7 +94,9 @@ module.exports = {
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/naming-convention": "off",
-    "@typescript-eslint/consistent-type-assertions": "warn"
+    "@typescript-eslint/consistent-type-assertions": "warn",
+    "@typescript-eslint/no-dynamic-delete": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn"
   },
   globals: {
     __IS_DEV__: true
