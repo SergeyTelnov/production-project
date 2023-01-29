@@ -96,7 +96,8 @@ module.exports = {
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/consistent-type-assertions": "warn",
     "@typescript-eslint/no-dynamic-delete": "warn",
-    "@typescript-eslint/ban-ts-comment": "warn"
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-misused-promises": "warn"
   },
   globals: {
     __IS_DEV__: true
