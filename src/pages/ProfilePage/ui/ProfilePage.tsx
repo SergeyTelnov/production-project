@@ -31,6 +31,7 @@ interface ProfilePageProps {
 
 const ProfilePage = ({ className }: ProfilePageProps) => {
   const { t } = useTranslation();
+
   const dispatch = useAppDispatch();
 
   const formData = useSelector(getProfileForm);
@@ -39,7 +40,9 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
   const readonly = useSelector(getProfileReadOnly);
 
   useEffect(() => {
-    dispatch(fetchProfileData());
+    if (__PROJECT__ !== "storybook") {
+      dispatch(fetchProfileData());
+    }
   }, [dispatch]);
 
   const onChangeFirstName = useCallback(
