@@ -29,10 +29,10 @@
     "first": "Иван",
     "lastname": "Иванов",
     "age": 22,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
+    "city": "Москва",
     "username": "admin",
-    "avatar": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Wink&eyebrowType=UpDown&mouthType=Smile&skinColor=Pale"
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtwGdEq2pN8jQMQRq53hR567tK6zIjWGJsQ&usqp=CAU",
+    "currency": "USD",
+    "country": "Russia"
   }
 }

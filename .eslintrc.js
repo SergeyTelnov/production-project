@@ -40,15 +40,16 @@ module.exports = {
     "no-unused-vars": "warn",
     "n/handle-callback-err": "warn",
     "react/require-default-props": "off",
-    "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "warn",
     "react/function-component-definition": "off",
-    "react/display-name": "warn",
     "no-shadow": "off",
     "space-before-function-paren": [
       "error",
       { anonymous: "always", named: "never" }
     ],
+    "multiline-ternary": "warn",
+    "react/display-name": "warn",
+    "react/react-in-jsx-scope": "off",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
@@ -97,10 +98,14 @@ module.exports = {
     "@typescript-eslint/consistent-type-assertions": "warn",
     "@typescript-eslint/no-dynamic-delete": "warn",
     "@typescript-eslint/ban-ts-comment": "warn",
-    "@typescript-eslint/no-misused-promises": "warn"
+    "@typescript-eslint/no-misused-promises": "warn",
+    "@typescript-eslint/prefer-nullish-coalescing": "warn",
+    "@typescript-eslint/no-invalid-void-type": "warn"
   },
   globals: {
-    __IS_DEV__: true
+    __IS_DEV__: true,
+    __API__: true,
+    __PROJECT__: true
   },
   overrides: [
     {

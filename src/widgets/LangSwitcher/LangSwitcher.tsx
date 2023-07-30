@@ -21,7 +21,7 @@ const LangSwitcher = memo(({ className }: LangSwitcherProps) => {
       className={classNames(cls.LangSwitcher, {}, [className])}
       onClick={toggle}
     >
-      {t("Language")}
+      {t("language")}
     </Button>
   );
 });

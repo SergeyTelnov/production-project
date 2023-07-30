@@ -3,11 +3,11 @@ import { classNames } from "shared/lib/classNames/classNames";
 import { Button } from "shared/ui/Button/Button";
 import cls from "./PageError.module.scss";
 
-interface NavbarProps {
+interface PageErrorProps {
   className?: string;
 }
 
-export const PageError = ({ className }: NavbarProps) => {
+export const PageError = ({ className }: PageErrorProps) => {
   const { t } = useTranslation();
 
   const reloadPage = () => {
@@ -16,8 +16,8 @@ export const PageError = ({ className }: NavbarProps) => {
 
   return (
     <div className={classNames(cls.PageError, {}, [className])}>
-      <p>{t("An unexpected error has occurred")}</p>
-      <Button onClick={reloadPage}>{t("Refresh the page")}</Button>
+      <p>{t("an-unexpected-error-has-occurred")}</p>
+      <Button onClick={reloadPage}>{t("refresh-the-page")}</Button>
     </div>
   );
 };

@@ -14,7 +14,7 @@ import { getLoginIsLoading } from "../../model/selectors/getLoginIsLoading/getLo
 import { getLoginError } from "../../model/selectors/getLoginError/getLoginError";
 import {
   DynamicModuleLoader,
-  ReducerList
+  ReducersList
 } from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
 
@@ -23,7 +23,7 @@ export interface LoginFormProps {
   onSuccess: () => void;
 }
 
-const initialReducer: ReducerList = {
+const initialReducer: ReducersList = {
   loginForm: loginReducer
 };
 
@@ -59,20 +59,20 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
   return (
     <DynamicModuleLoader removeAfterUnmount={true} reducers={initialReducer}>
       <div className={classNames(cls.LoginForm, {}, [className])}>
-        <Text title={t("Login")} />
+        <Text title={t("login")} />
         {error && (
-          <Text text={t("Invalid email or password")} theme={TextTheme.ERROR} />
+          <Text text={t("invalid-email-or-password")} theme={TextTheme.ERROR} />
         )}
         <Input
           autofocus
-          placeholder={t("E-mail")}
+          placeholder={t("e-mail")}
           className={cls.input}
           onChange={onChangeUserName}
           value={username}
           type="text"
         />
         <Input
-          placeholder={t("Password")}
+          placeholder={t("password")}
           className={cls.input}
           onChange={onChangePassword}
           value={password}
@@ -84,7 +84,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
           className={cls.loginBnt}
           disabled={isLoading}
         >
-          {t("Sign in")}
+          {t("sign-in")}
         </Button>
       </div>
     </DynamicModuleLoader>
