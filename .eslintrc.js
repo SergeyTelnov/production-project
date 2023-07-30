@@ -35,6 +35,19 @@ module.exports = {
         allowTemplateLiterals: true
       }
     ],
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "warn",
+    "n/handle-callback-err": "warn",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "warn",
+    "react/function-component-definition": "off",
+    "no-shadow": "off",
+    "space-before-function-paren": [
+      "error",
+      { anonymous: "always", named: "never" }
+    ],
+    "multiline-ternary": "warn",
     "react/display-name": "warn",
     "react/react-in-jsx-scope": "off",
     "import/extensions": "off",
