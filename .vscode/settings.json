@@ -7,6 +7,7 @@
   "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
   "i18n-ally.keystyle": "nested",
   "i18n-ally.displayLanguage": "ru",
+  "i18n-ally.enabledFrameworks": ["react-i18next"],
   "stylelint.enable": true,
   "css.validate": true,
   "scss.validate": true,

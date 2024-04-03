@@ -1,4 +1,3 @@
-import { StateSchema } from "app/providers/StoreProvider";
 import { loginByUsername } from "./loginByUserName";
 import { userActions } from "entities/User";
 import { TestAsyncThunk } from "shared/lib/tests/testAsyncThunk/testAsyncThunk";
