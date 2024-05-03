@@ -11,5 +11,44 @@
   "stylelint.enable": true,
   "css.validate": true,
   "scss.validate": true,
-  "stylelint.validate": ["css", "scss"]
+  "stylelint.validate": ["css", "scss"],
+  "folderTemplates.structures": [
+    {
+      "name": "tsx scss.module",
+      "omitParentDirectory": true,
+      "structure": [
+        {
+          "fileName": "<FTName|camelcase>/<FTName|camelcase>.test.ts"
+        },
+        {
+          "fileName": "<FTName|camelcase>/<FTName|camelcase>.tsx",
+          "template": "TS FC"
+        },
+        {
+          "fileName": "<FTName|camelcase>/<FTName|camelcase>.module.scss",
+          "template": "SCSS"
+        },
+        { "fileName": "<FTName|camelcase>/index.ts", "template": "TS INDEX" }
+      ]
+    }
+  ],
+  "folderTemplates.fileTemplates": {
+    "TS FC": [
+      "import { FC } from 'react';",
+      "",
+      "import cls from './<FTName|camelcase>.module.scss';",
+      "",
+      "interface <FTName|pascalcase>Props {",
+      "  className?: string;",
+      "}",
+      "",
+      "const <FTName|pascalcase>: FC<<FTName|pascalcase>Props> = (props) => {",
+      "  return <div className={cls.<FTName|pascalcase>}/>;",
+      "};",
+      "",
+      "export default <FTName|pascalcase>;"
+    ],
+    "SCSS": [".<FTName|pascalcase> {", "  text-decoration: none;", "}", ""],
+    "TS INDEX": "export {<FTName|pascalcase>} from './<FTName|camelcase>'"
+  }
 }
