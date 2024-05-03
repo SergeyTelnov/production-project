@@ -18,37 +18,42 @@
       "omitParentDirectory": true,
       "structure": [
         {
-          "fileName": "<FTName|camelcase>/<FTName|camelcase>.test.ts"
+          "fileName": "<FTName|pascalcase>/<FTName|pascalcase>.test.ts"
         },
         {
-          "fileName": "<FTName|camelcase>/<FTName|camelcase>.tsx",
+          "fileName": "<FTName|pascalcase>/<FTName|pascalcase>.tsx",
           "template": "TS FC"
         },
         {
-          "fileName": "<FTName|camelcase>/<FTName|camelcase>.module.scss",
-          "template": "SCSS"
+          "fileName": "<FTName|pascalcase>/<FTName|pascalcase>.stories.tsx",
+          "template": "STORYBOOK"
         },
-        { "fileName": "<FTName|camelcase>/index.ts", "template": "TS INDEX" }
+        {
+          "fileName": "<FTName|pascalcase>/<FTName|pascalcase>.module.scss",
+          "template": "SCSS"
+        }
       ]
     }
   ],
   "folderTemplates.fileTemplates": {
     "TS FC": [
-      "import { FC } from 'react';",
-      "",
-      "import cls from './<FTName|camelcase>.module.scss';",
+      "import { classNames } from 'shared/lib/classNames/classNames';",
+      "import cls from './<FTName|pascalcase>.module.scss';",
       "",
       "interface <FTName|pascalcase>Props {",
       "  className?: string;",
       "}",
       "",
-      "const <FTName|pascalcase>: FC<<FTName|pascalcase>Props> = (props) => {",
-      "  return <div className={cls.<FTName|pascalcase>}/>;",
+      "const <FTName|pascalcase> = (props: <FTName|pascalcase>Props) => {",
+      "  const { className } = props;",
+      "  return (",
+      "   <div className={classNames(cls.<FTName|pascalcase>, {}, [className])}></div>",
+      "  )",
       "};",
       "",
       "export default <FTName|pascalcase>;"
     ],
     "SCSS": [".<FTName|pascalcase> {", "  text-decoration: none;", "}", ""],
-    "TS INDEX": "export {<FTName|pascalcase>} from './<FTName|camelcase>'"
+    "STORYBOOK": [""]
   }
 }
